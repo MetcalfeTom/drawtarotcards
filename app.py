@@ -4,6 +4,8 @@ from datetime import datetime
 
 import streamlit as st
 
+st.set_page_config(page_title="drawtarot.cards")
+
 
 def main():
     st.title("drawtarot.cards")
@@ -54,6 +56,10 @@ def main():
                 "cards", f"{selected_cards[1][0]} {selected_cards[1][1]}.jpg"
             )
             col2.image(image_path2, caption=card_names[1], use_column_width=True)
+
+    st.write(
+        f"Discover more with [Nébula the Tarot Cat](https://apps.apple.com/us/app/nebula-tarot-cat/id6449970544) 🐈"
+    )
 
 
 if __name__ == "__main__":
